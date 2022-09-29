@@ -1,0 +1,8 @@
+gnn.layers_mp l_mp [2,3]
+gnn.stage_type stage ['stack','skipsum','skipconcat']
+gnn.dim_inner dim [32,64,128,256]
+gnn.act act ['relu','swish','prelu']
+gnn.agg agg ['mean','max','sum']
+
+
+
