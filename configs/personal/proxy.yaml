@@ -1,0 +1,38 @@
+out_dir: results
+dataset:
+  format: OGB
+  name: ogbg-molhiv
+  task: graph
+  task_type: regression
+  node_encoder: true
+  node_encoder_name: Atom
+  edge_encoder: true
+  edge_encoder_name: Bond
+train:
+  batch_size: 128
+  eval_period: 1      # 每隔一个epoch做一次evaluation
+  ckpt_period: 80
+  sampler: full_batch
+model:
+  type: gnn
+  loss_fun: mse
+  edge_decoding: dot
+  graph_pooling: add
+gnn:
+  layers_mp: 2
+  layers_post_mp: 2
+  dim_inner: 32
+  layer_type: generalconv
+  stage_type: skipsum
+  batchnorm: true
+  act: relu
+  dropout: 0.0
+  agg: mean
+  normalize_adj: false
+optim:
+  optimizer: sgd
+  base_lr: 0.075
+  max_epoch: 80
+metric_best: 'mse'
+metric_agg: 'argmin'
+round: 6 # 近似位数
