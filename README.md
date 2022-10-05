@@ -55,11 +55,11 @@ to run the experiment.
 
 All the functions for result analysis is in ``proxy_groundtruth_analysis.py``, which contains:
 ```txt
-proxy_groundtruth_analysis: Analyze proxy ranking and classification based groundtruth ranking. Compute rho and tau, draw scatter figure.
-proxy_groundtruth_analysis_ZINC: Analyze proxy ranking and  regression-based grdountruth ranking. Compute rho and tau, draw scatter figure.
-proxy_groundtruth_analysis_epoch: Analyze proxy ranking and classification based groundtruth ranking at each epoch. Compute rho and tau, draw scatter figure.
-proxy_groundtruth_analysis_ZINC: Analyze proxy ranking and regression-based grdountruth ranking at each epoch. Compute rho and tau, draw scatter figure.
-similarity_analysis: Analyze Ranking Stability for groundtruth ranking or proxy ranking. Compute rho and tau, draw scatter figure.
-similarity_analysis_epoch: Analyze Ranking Stability at each epoch. Compute rho and tau, draw scatter figure.
+proxy_groundtruth_analysis: Analyzes proxy ranking and classification based groundtruth ranking. Computes rho and tau, draws scatter figure.
+proxy_groundtruth_analysis_ZINC: Analyzes proxy ranking and  regression-based grdountruth ranking. Computes rho and tau, draws scatter figure.
+proxy_groundtruth_analysis_epoch: Analyzes proxy ranking and classification based groundtruth ranking at each epoch. Computes rho and tau, draws scatter figure.
+proxy_groundtruth_analysis_ZINC: Analyzes proxy ranking and regression-based grdountruth ranking at each epoch. Computes rho and tau, draws scatter figure.
+similarity_analysis: Analyzes Ranking Stability for groundtruth ranking or proxy ranking. Computes rho and tau, draws scatter figure.
+similarity_analysis_epoch: Analyzes Ranking Stability at each epoch. Computes rho and tau, draws scatter figure.
 ```
 Simply add these function below ``if __name__ == '__main__':`` when you want to analyze experiment results. Before using, please change the file path contained in the function.
