@@ -20,11 +20,11 @@ some file in it. However, you still need to install ``torch_geometric`` and  ``t
 
 RegNAS offers several training pipelines for experiments. As listed below:
 ```text
-main.py: Groundtruth training pipeline for ogbg-molhiv or other 
+main.py: Groundtruth training pipeline for ogbg-molhiv or other classification based groundturth task.
 main_ZINC.py: Groundtruth training pipeline for ZINC or other regression based groundtruth task.
 main_proxy_le.py: Proxy training pipeline using Laplacian Matrix's eigenvectors as proxy task.
 main_proxy_pm.py: Proxy training pipeline using Poorest Model generated vectors as proxy task.
-main_proxy_rm.py: Proxy training pipeline using Poorest Model generated vectors as proxy task. (also applicable for GM based pipeline)
+main_proxy_rm.py: Proxy training pipeline using Randomly-Selected Model generated vectors as proxy task. (also applicable for GM based pipeline)
 main_proxy_rv.py: Proxy training pipeline using Random generated vectors as proxy task
 ```
 For example, if we want to run ``main.py`` for 3 times with the configuration ``your_configs.yaml`` (stored in configs/pyg), simply use
