@@ -14,7 +14,7 @@ To check whether your environment match the requirement, please run
 bash run_single.sh
 ````
 If no errors occurs, then you can use ReG-NAS. ReG-NAS itself contains ``torch_geometric`` and ``torch.nn`` for we modified
-some file in it. However, you still need to install ``torch_geometric`` and  ``torch`` in your environment
+some files in it. However, you still need to install ``torch_geometric`` and  ``torch`` in your environment
 ## 2. How to use
 ### 2.1 To run a single experiments
 
